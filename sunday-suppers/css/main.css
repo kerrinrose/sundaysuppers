@@ -439,7 +439,7 @@ border-bottom: 2px solid #F5A623;
 
     position: absolute;
     top: 80%;
-    left: 12%;
+    left: 140px;
     transform: translate(-50%, -60%);
 
 }
@@ -511,7 +511,7 @@ border-bottom: 2px solid #F5A623;
 .impact-1 {
 
   background-color: #f1ad49;
-padding: 100px 100px !important;
+padding: 5% 5% !important;
 
 }
 
@@ -652,7 +652,7 @@ form div {
 
 form input[type=text] {
 
-width: 300px;
+width: 90%;
 padding: 10px 20px;
     margin: 8px 0;
     border: 0px;
@@ -700,7 +700,7 @@ footer nav {
 
 footer .container h2 {
 
-  font-size: 16px;
+  font-size: 18px;
 }
 footer .container {
 
@@ -768,47 +768,6 @@ box-sizing: border-box;
 
 
 
-/* ================
-  MEDIA QUERIES
-  ================== */
-
-@media (max-width: 1369px) {
-
-  nav {
-
-    padding: 5px 0%;
-  }
-}
-
-@media (max-width: 1150px) {
-
-
-
-   .donate {
-     position: absolute;
-     top: 90px;
-     right: 5px;
-     z-index: 1;
-   }
-}
-
-@media (max-width: 935px) {
-
-  nav a, .donate {display: none;}
-  nav .logolink {display: block;}
-  nav .nav-icon {display: block;}
-  nav {
-    justify-content: space-between;
-  }
-
-.hero-text {
-
-
-left: 0%;
-transform: translate(5%, -60%);
-}
-
-}
 
 
 /* ================
@@ -930,7 +889,118 @@ margin: 2%;
 
 
 
+/* ================
+  MEDIA QUERIES
+  ================== */
 
+@media (max-width: 1369px) {
+
+  nav {
+
+    padding: 5px 0%;
+  }
+}
+
+@media (max-width: 1150px) {
+
+
+
+   .donate {
+     position: absolute;
+     top: 90px;
+     right: 5px;
+     z-index: 1;
+   }
+
+   .newsletter-image {
+
+     display: none;
+   }
+
+   .newsletter {
+     width: 50%;
+   }
+
+}
+
+
+
+@media (max-width: 935px) {
+
+  .top a, .donate {display: none;}
+  nav .logolink {display: block;}
+  nav .nav-icon {display: block;}
+  nav {
+    justify-content: space-between;
+  }
+
+
+
+.hero-text {
+
+
+left: 0%;
+transform: translate(5%, -60%);
+}
+
+
+
+}
+
+@media (max-width: 800px) {
+
+  .col-10, .col-20, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-80, .col-90, .col-100 {
+
+    width: 100%;
+
+  }
+
+.dark > div {
+
+  margin-top: 30px;
+}
+
+.newsletter h1 {
+
+  text-align: center;
+}
+
+.impact-2 {
+
+  margin-top: 30px !important;
+}
+
+.why {
+
+  margin-top: 50px !important;
+}
+
+footer nav {
+
+  text-align: center;
+}
+
+footer nav ul {
+
+  display: inline-block;
+}
+
+footer nav ul li a {
+
+  margin-top: 10px;
+}
+
+
+footer div {
+
+  text-align: center;
+}
+footer p {
+
+
+  margin-bottom: 50px;
+}
+}
 
 
 
