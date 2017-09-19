@@ -49,7 +49,21 @@ Phone: 215-913-5028</p>
 
 
 
-    
+<script>
+
+jQuery(document).ready(function(){
+
+$('.overlaynavcontent').prev().attr('href', 'javascript:void(0)');
+$('.overlaynavcontent').prev().addClass('after');
+
+$('.after').click(function() {
+
+  $(this).toggleClass('afterafter');
+  $(this).next().toggleClass('display-block');
+
+});
+
+});</script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

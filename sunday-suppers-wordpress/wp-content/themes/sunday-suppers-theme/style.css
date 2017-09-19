@@ -446,9 +446,9 @@ border-bottom: 2px solid #F5A623;
 .header-text {
 
     position: absolute;
-    top: 80%;
-    left: 140px;
-    transform: translate(-50%, -60%);
+    top: 70%;
+    left: 40px;
+
 
 }
 
@@ -600,9 +600,15 @@ font-weight: 700;
 
 }
 
+.news-card a {
+
+  text-decoration: none;
+  color: #363636;
+}
+
 .news-card-text:after {
 
-  content: url('../img/orange-carot.svg');
+  content: url('img/orange-carot.svg');
   position: relative;
   left: 10px;
   top: 5px;
