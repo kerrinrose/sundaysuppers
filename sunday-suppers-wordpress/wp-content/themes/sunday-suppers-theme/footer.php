@@ -1,7 +1,7 @@
 <footer>
   <div class="container">
 <div class="row">
-<div class="col-100  padding-reset flex align-items-center">
+<div class="col-100  padding-reset margin-reset flex align-items-center">
   <h1>Sunday Suppers</h1>
 
   <div class="social"><a href=""><img src="img/Facebook-white.svg"></a></div>
@@ -10,9 +10,9 @@
 </div>
 
 <div class="row justify-content">
-<div class="">
+<div style="margin-top:2%;">
   <nav>
-    <ul>
+    <ul style="line-height: 10px;">
       <li><a href="">Who We Are</a></li>
       <li><a href="">What We Do</a></li>
       <li><a href="">Get Involved</a></li>
@@ -56,12 +56,15 @@ jQuery(document).ready(function(){
 $('.overlaynavcontent').prev().attr('href', 'javascript:void(0)');
 $('.overlaynavcontent').prev().addClass('after');
 
+$('.dropdown-content').prev().attr('href', 'javascript:void(0)');
+
 $('.after').click(function() {
 
   $(this).toggleClass('afterafter');
   $(this).next().toggleClass('display-block');
 
 });
+
 
 });</script>
 

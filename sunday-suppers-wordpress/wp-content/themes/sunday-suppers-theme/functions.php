@@ -29,4 +29,6 @@ add_action( 'init', 'register_my_menus' );
 
 add_theme_support( 'post-thumbnails' );
 
+add_image_size( 'recipe', 300, 300, true );
+
  ?>

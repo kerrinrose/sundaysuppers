@@ -56,7 +56,7 @@ while ($query->have_posts() ) : $query -> the_post();
 
 
   ?><a href="<?php the_permalink(); ?>">
-<?php echo $thumbnail ?>
+<img src="<?php echo get_the_post_thumbnail_url(); ?>">
   <div class="news-card-text">
   <?php echo $title ?>
   </div>
@@ -82,15 +82,14 @@ while ($query->have_posts() ) : $query -> the_post();
 
     while ($query->have_posts() ) : $query -> the_post();
       $title = get_the_title();
-      set_post_thumbnail_size( 9999, 245 , array( 'center', 'center')  );
-      $thumbnail = get_the_post_thumbnail();
+
 
       ?>
 
     <h1>Featured <?php if( in_category('family')) {echo 'Family';} else { echo 'Volunteer';} ?></h1>
     <div class="news-card">
       <a href="<?php the_permalink(); ?>">
-    <?php echo $thumbnail ?>
+  <img src="<?php echo get_the_post_thumbnail_url(); ?>">
     <div class="news-card-text">
     <?php echo $title ?>
   </div></a>
@@ -109,19 +108,20 @@ while ($query->have_posts() ) : $query -> the_post();
   <div class="col-33">
   <h1>Featured Recipe</h1>
   <div class="news-card">
-<?php
-$query = new WP_Query( array( 'category_name' => 'recipe', 'posts_per_page' => '1'  ) );
+    <?php
 
-while ($query->have_posts() ) : $query -> the_post();
-  $title = get_the_title();
-  set_post_thumbnail_size( 9999, 245 , array( 'center', 'center')  );
-  $thumbnail = get_the_post_thumbnail();
+    $get_recipe = new WP_Query( array( 'post_type' => 'recipe_post', 'posts_per_page' => '1' ) );
+    while ($get_recipe->have_posts() ) : $get_recipe -> the_post();
 
 
-  ?><a href="<?php the_permalink(); ?>">
-<?php echo $thumbnail ?>
+
+      ?>
+
+
+  <a href="<?php the_permalink(); ?>">
+<img src="<?php echo get_the_post_thumbnail_url(); ?>">
   <div class="news-card-text">
-  <?php echo $title ?>
+  <?php the_title(); ?>
   </div>
 </a>
 

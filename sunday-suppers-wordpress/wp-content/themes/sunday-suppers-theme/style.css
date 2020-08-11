@@ -49,9 +49,7 @@ Version: 1
  body {
  	line-height: 1;
  }
- ol, ul {
- 	list-style: none;
- }
+
  blockquote, q {
  	quotes: none;
  }
@@ -493,7 +491,7 @@ border-bottom: 2px solid #F5A623;
 
 .container {
 
-  padding: 30px 6%;
+  padding: 30px 10%;
 }
 
 .container h1 {
@@ -509,8 +507,18 @@ border-bottom: 2px solid #F5A623;
   font-weight: 700;
   padding: 15px 0px;
   font-size: 20px;
+
 }
 
+.container ol, .container ul {
+line-height: 30px;
+
+}
+
+.container ol li {
+
+  padding: 0px 0px 20px 10px;
+}
 .container p {
 
   line-height: 30px;
@@ -576,6 +584,18 @@ button:after {
 button:hover {
 
   background-color: #29572B;
+}
+
+.large-btn {
+
+  background-color: #f1ad39;
+  font-family: 'Amatic';
+  font-size: 30px;
+}
+
+.large-btn:hover {
+
+  background-color: #D99126;
 }
 
 .dark {
@@ -747,11 +767,27 @@ footer a {
 }
 
 
-.recipes {
+.recipe img {
+
+  width: 100%;
+}
+
+.cards {
 
 
   background-color: #eee;
 }
+
+
+h1.post {
+
+  font-family: 'Lato';
+  font-weight: 700;
+  color:#363636;
+  font-size: 36px;
+  padding: 30px 0px 0px 0px;
+}
+
 
 .recipe {
 
@@ -761,11 +797,15 @@ footer a {
 box-sizing: border-box;
 }
 
+.recipe a {
 
+  color: #363636;
+  text-decoration: none;
+}
 
 .recipe p:after {
 
-  content: url('../img/orange-carot.svg');
+  content: url('img/orange-carot.svg');
   position: relative;
   left: 10px;
   top: 5px;
@@ -805,6 +845,11 @@ display: flex;
   padding: 0px !important;
 }
 
+.margin-reset {
+
+  margin: 0px !important;
+}
+
 .justify-left {
 justify-content: left !important;
 
@@ -836,6 +881,13 @@ margin: 2%;
 .col-20 {
 
   width: 16%;
+  margin: 2%;
+
+}
+
+.col-30 {
+
+  width: 26%;
   margin: 2%;
 
 }
@@ -901,7 +953,21 @@ margin: 2%;
 
 }
 
+.lh-large {
 
+  line-height: 40px !important;
+}
+
+.ls-none {
+
+  list-style: none;
+}
+
+em {
+
+  font-weight: 700;
+  color:#f1ad39;
+}
 
 
 /* ================
@@ -964,7 +1030,7 @@ transform: translate(5%, -60%);
 
 @media (max-width: 800px) {
 
-  .col-10, .col-20, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-80, .col-90, .col-100 {
+  .col-10, .col-20, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-80, .col-90, .col-100 {
 
     width: 100%;
 
